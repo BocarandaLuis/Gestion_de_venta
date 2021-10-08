@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>productDetail</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+	<div padding>
+	  <ion-item>
+	    <ion-input type="text" placeholder="Nombre del producto" [(ngModel)]="product.name_product"></ion-input>
+	  </ion-item>
+	  <ion-item>
+	    <ion-input type="text" placeholder="Descripcion del product" [(ngModel)]="product.description"></ion-input>
+	  </ion-item>
+	  <ion-item>
+	    <ion-input type="text" placeholder="Disponible" [(ngModel)]="product.available"></ion-input>
+	  </ion-item>
+	   <ion-item>
+	    <ion-input type="number" placeholder="Existencia" [(ngModel)]="product.existence"></ion-input>
+	  </ion-item>
+	  
+	  <ion-button (click)="saveProduct()" color="primary">Guardar</ion-button>
+	</div>
+
+</ion-content>
